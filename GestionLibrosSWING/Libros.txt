@@ -1,0 +1,20 @@
+ISBN: aaaa
+Titulo: bbb
+Autor: aaabb
+Categoria : Ficcion
+---------------------------------
+ISBN: asdasd
+Titulo: asdasd
+Autor: asdasd
+Categoria : Otra
+---------------------------------
+ISBN: R4Y6
+Titulo: Aleacion de ley
+Autor: Brando sanderson
+Categoria : Ficcion
+---------------------------------
+ISBN: RT54
+Titulo: Nunca te pares
+Autor: Phill Knighttt
+Categoria : Ficcion
+---------------------------------
