@@ -1,0 +1,57 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 04-11-2024 a las 13:42:39
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Base de datos: `encuesta`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `resultados`
+--
+
+CREATE TABLE `resultados` (
+  `Nombre` varchar(50) NOT NULL,
+  `FechaNacimiento` date NOT NULL,
+  `Sexo` varchar(10) NOT NULL,
+  `Pregunta1` double NOT NULL,
+  `Pregunta2` double NOT NULL,
+  `Pregunta3` double NOT NULL,
+  `Pregunta4` double NOT NULL,
+  `Puntos` double NOT NULL,
+  `Intentos` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `resultados`
+--
+
+INSERT INTO `resultados` (`Nombre`, `FechaNacimiento`, `Sexo`, `Pregunta1`, `Pregunta2`, `Pregunta3`, `Pregunta4`, `Puntos`, `Intentos`) VALUES
+('Diego', '1989-12-12', 'Hombre', 1, 1, 1, 1, 4, 2),
+('Eren', '2018-12-18', 'Hombre', 1, 1, 1, 1, 4, 2),
+('Eva López Díaz', '1975-10-23', 'Mujer', 1, -0.5, -0.5, 1, 1, 3),
+('hola', '2024-07-07', 'Mujer', -0.5, -0.5, 1, -0.5, -0.5, 1),
+('Luara', '1987-11-15', 'Mujer', -0.5, -0.5, -0.5, -0.5, -2, 3),
+('Pedro Domínguez Castro', '1982-01-07', 'Hombre', -0.5, -0.5, -0.5, -0.5, -2, 3);
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `resultados`
+--
+ALTER TABLE `resultados`
+  ADD PRIMARY KEY (`Nombre`);
+COMMIT;
